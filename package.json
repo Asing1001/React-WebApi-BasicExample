@@ -1,0 +1,21 @@
+{
+  "name": "188onlinetools",
+  "version": "1.0.0",
+  "description": "online tools for partner",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "tools"
+  ],
+  "author": "Star",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "bootstrap": "^3.3.7",
+    "express": "^4.14.0",
+    "jquery": "^3.1.1",
+    "node-fetch": "^1.6.1"
+  }
+}
