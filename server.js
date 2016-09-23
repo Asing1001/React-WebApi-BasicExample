@@ -9,9 +9,8 @@ app.use(express.static(__dirname));
 app.use(bodyParser.json());
 
 app.get('/api/getNetentSessionId', function (req, res) {
-    var data = { "membercode": req.query.membercode, "channel": req.query.channel };
-    var content = JSON.stringify(data);
-            console.log(content);
+    var content = JSON.stringify(req.query);
+    console.log(content);
     fetch('http://netent.188bet.qat/NetEntService.svc/loginuser',
         {
             method: 'POST', body: content,

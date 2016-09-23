@@ -16,7 +16,6 @@ var GetSessionIdForm = React.createClass({
         $.ajax({
             url: '/api/getNetentSessionId',
             dataType: 'json',
-            cache: false,
             data: {membercode:memberCode,channel:channel},
             success: function (sessionId) {
                 console.log(sessionId);
